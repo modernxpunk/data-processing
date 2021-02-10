@@ -8,10 +8,10 @@
 <jsp:include page="include/main_header.jsp" />
 <div class="form_wrapper">
     <form action="<%=request.getContextPath()%>/form" method="post">
-                Fill in form <br>
                 <input type="hidden" name="title" value="Submited"/>
+              
 
-                 <input type="text" name="name" placeholder="Your name"><br/>
+                 <input type="text" name="name" placeholder="Name"><br/>
 
                 Gender: 
                 <input type="radio" name="gender" value="male">Male    
@@ -23,6 +23,7 @@
                     <input type="checkbox" name="language" value="Ukrainian">Ukrainian
                     <input type="checkbox" name="language" value="French">French <br/>
                 </div>
+                <br/>
                 Country: 
                 <select name="country">
                     <option value="Ukraine">Ukraine</option>
