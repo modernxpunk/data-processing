@@ -8,9 +8,9 @@
 
 <jsp:include page="include/main_header.jsp" />
 <div class="form_wrapper">
-    <p>Name is: <%= request.getParameter("name")%></p><br>
+    <p>Name: <%= request.getParameter("name")%></p><br>
     
-    <p>Gender is: 
+    <p>Gender: 
     <%
     String gender = request.getParameter("gender");
     if (gender == null) {
@@ -20,7 +20,7 @@
     %>
     </p><br>
 
-    <p>Languages is:
+    <p>Languages:
     <%
     String[] languages = request.getParameterValues("language");
     if (languages != null) {
