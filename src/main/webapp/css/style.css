@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 февр. 2021 г., 19:15:01
+    Author     : alex
+*/
+
+body{
+    font-family: Lucida Console, monospace;
+    font-size: 28pt;
+    color: white;
+}
+.background {
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    background-color:  black;
+  background-image: url(../img/bckgrnd.jpg);
+  
+  background-position: bottom, center;
+  background-repeat: no-repeat;
+}
+
+.title{
+    font-weight: bold;
+    margin: 40px;
+    text-align: center;
+}
+h2{
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 15px;
+    text-align: center;
+}
+br{
+    display: block;
+    margin-top: 10px;
+    content: "";
+}
+.about{
+    text-align: center;
+    font-size: 14pt;
+    margin: 15px;
+}
+
+.menu{
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+.button {
+    font-size: 18px;
+  background: #454545;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5em 2.5em;
+  border: 2px solid;
+  transition: 0.2s;
+} 
+
+.button:hover { background: rgba(255,255,255,.2); }
+.button:active { background: white; }
+
+.return{
+    font-size: 18px;
+  background: #454545;
+  display: inline-block;
+  margin: 30px 10px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5em 2.5em;
+  border: 2px solid;
+  transition: 0.2s;
+}
+
+.form_wrapper{
+    font-size: 16pt;
+    margin: 20px auto;
+}
+.form_wrapper input[type=text] {
+    font-size: 14pt;
+    width: 90%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    
+}
+
+
+.form_wrapper select {
+    font-size: 14pt;
+    padding: 4px 25px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+.form_wrapper .button{
+    margin: 35px 10px;
+}
+
+
+@media (min-width: 1300px){
+    .background{
+        background-size: 70%;
+    }
+    
+    .form_wrapper{
+    width: 50%;
+    }
+    
+    .checkb{
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1300px){
+    .background{
+        background-size: 80%; 
+    }
+    .form_wrapper{
+    width: 60%;
+    }
+    
+    .checkb{
+        display: inline-block;
+    }
+}
+@media (max-width: 1100px){
+    .background{
+        background-size: 80%; 
+    }
+    .form_wrapper{
+    width: 70%;
+    }
+}
+
+@media (max-width: 600px){
+    .background{
+        background-size: 100%; 
+    }
+    .form_wrapper{
+    width: 90%;
+    }
+    .checkb label{
+        display: flex;
+    }
+    
+}
