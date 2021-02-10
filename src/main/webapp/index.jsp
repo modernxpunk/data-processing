@@ -18,7 +18,7 @@
     </head>
     <body>
         <div class="background">
-            <h1 class="title">Kovalskyi Alex project!</h1>
+            <h1 class="title">Kovalskyi Alex project</h1>
             <h2>About me</h2>
             <div class="about">
                 Student of Taras Shevchenko National University of Kyiv<br>
