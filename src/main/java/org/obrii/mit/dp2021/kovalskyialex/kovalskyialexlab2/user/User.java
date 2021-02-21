@@ -10,7 +10,7 @@ public class User implements UserInterface {
     private String name;
 
     public User(String name) {
-        this.name = name;
+        this.name = name; 
     }
 
     public User(int number) {
