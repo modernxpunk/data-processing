@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <servlet>
+        <servlet-name>DataUsersServlet</servlet-name>
+        <servlet-class>org.obrii.mit.dp2021.alexkovalskyi.lab3.kovalskyilab3.servlets.DataUsersServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>UsersStoreRefactorer</servlet-name>
+        <servlet-class>org.obrii.mit.dp2021.alexkovalskyi.lab3.kovalskyilab3.usersStore.UsersStoreRefactorer</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>UsersRefactoringServlet</servlet-name>
+        <servlet-class>org.obrii.mit.dp2021.alexkovalskyi.lab3.kovalskyilab3.servlets.UsersRefactoringServlet</servlet-class>
+    </servlet>
+    
+    
+    
+    <servlet-mapping>
+        <servlet-name>DataUsersServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>UsersStoreRefactorer</servlet-name>
+        <url-pattern>/formr</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>UsersRefactoringServlet</servlet-name>
+        <url-pattern>/change</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
